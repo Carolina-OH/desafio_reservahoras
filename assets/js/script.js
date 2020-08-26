@@ -41,6 +41,28 @@ function cambiosnombres() {
     };
 }
 
+
+//validación apellidos
+var apellidos= document.getElementById("apellidos").value;
+var expresion2=/^[a-zñ]{1,30}\s[a-zñ]{1,30}$/gmi;
+
+
+function limpiarapellidos() {
+    var apellidos1 = document.getElementById("apellidos");
+    apellidos1.value="";
+}; 
+
+function cambiosapellidos() {
+    var apellidos = document.getElementById("apellidos").value;
+    if (apellidos.match(expresion2)){
+        console.log(apellidos)
+    }
+    else{
+    alert("debe ingresar sus dos apellidos")
+    limpiarapellidos()
+    console.log(apellidos)
+    };
+}
 /* enviar.addEventListener('click',function(){
 });
  */
