@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de horas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<h1>Reserva de horas</h1>
+<form action="" method="post">
+    <label for="">Rut</label> <br>
+    <input type="text" id="rut" onblur="cambiosrut()"> <br>   
+    <label for="">Nombres</label> <br>
+    <input type="text" id="nombres" onblur="cambiosnombres()">   <br>  
+    <label for="">Apellidos</label> <br>
+    <input type="text" id="apellidos">   <br>  
+    <label for="">Edad</label> <br>
+    <input type="text" id="edad"> <br> 
+    <label for="">Email</label> <br>
+    <input type="email">  <br> 
+    <label for="">Especialidad</label> <br>
+    <select name="Especialidad" id="especialidad" required> <br>
+        <option value="0" selected disabled>Seleccione especialidad</option>
+        <option value="1">Medicina interna</option>
+        <option value="2">Medicina infantil</option>
+        <option value="3">Geriatria</option>
+        <option value="4">Traumatología</option>
+        <option value="5">Radiología</option>
+        <option value="6">Psiquiatría</option>
+        <option value="6">Neurología</option>
+    </select>   <br>
+    <label for="">Fecha</label> <br>
+    <input type="date"><br> 
+    <label for="">Hora</label> <br>
+    <input type="time"><br> 
+    <input type="button" value="Enviar" id="enviar">
+</form>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

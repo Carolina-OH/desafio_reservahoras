@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding: 0;
+}
+h1{
+    margin: 2% 0 0 5%;
+    text-align: left;
+}
+form{
+    margin:0 0 0 5%;
+    
+  
+
+}
+input{
+    margin:10px 0 10px 0;
+    width: 150px;
+}
+select{
+    margin: 10px 0 10px 0;
+}
