@@ -63,6 +63,53 @@ function cambiosapellidos() {
     console.log(apellidos)
     };
 }
+
+
+//validación Edad
+var edad=document.getElementById("edad").value
+var expresion3=/^\d{1,3}$/gm;
+console.log(edad.match(expresion3));
+
+function limpiaredad() {
+    var edad1 = document.getElementById("edad");
+    edad1.value="";
+};
+
+function cambioedad() {
+    var edad = document.getElementById("edad").value;
+    if (edad.match(expresion3)){
+        console.log(edad)
+    }
+    else{
+    alert("Debe ingresar su edad")
+    limpiaredad()
+    console.log(edad)
+    };
+}
+
+//Validación E-mail
+var email="gh66hI@as.com"
+var expresion4=/[a-z 1-9]{1,100}\@[a-z]{1,10}\.[a-z]{2,3}$/gmi;
+console.log(email.match(expresion4));
+
+
+function limpiaremail() {
+    var email1 = document.getElementById("email");
+    email1.value="";
+};
+
+function cambioemail() {
+    var email = document.getElementById("email").value;
+    if (email.match(expresion4)){
+        console.log(email)
+    }
+    else{
+    alert("Debe ingresar su email con el formato xxxx@xx.xx")
+    limpiaremail()
+    console.log(email)
+    };
+}
 /* enviar.addEventListener('click',function(){
 });
  */
+

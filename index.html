@@ -17,9 +17,9 @@
     <label for="">Apellidos</label> <br>
     <input type="text" id="apellidos" onblur="cambiosapellidos()">   <br>  
     <label for="">Edad</label> <br>
-    <input type="text" id="edad"> <br> 
+    <input type="text" id="edad"onblur="cambioedad()"> <br> 
     <label for="">Email</label> <br>
-    <input type="email">  <br> 
+    <input type="email"id="email" onblur="cambioemail()">  <br> 
     <label for="">Especialidad</label> <br>
     <select name="Especialidad" id="especialidad" required> <br>
         <option value="0" selected disabled>Seleccione especialidad</option>
@@ -32,7 +32,7 @@
         <option value="6">Neurología</option>
     </select>   <br>
     <label for="">Fecha</label> <br>
-    <input type="date"><br> 
+    <input type="text"  id="fecha"><br> 
     <label for="">Hora</label> <br>
     <input type="time"><br> 
     <input type="button" value="Enviar" id="enviar">
