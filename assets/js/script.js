@@ -1,6 +1,6 @@
 //validación rut
 var rut = document.getElementById("rut").value;
-var enviar=document.getElementById("enviar");
+var reservar=document.getElementById("reservar");
 var expresion1= /^\d{1,2}\.\d{3}\.\d{3}[-][\dkK]{1}$/gm;
 
 function limpiarrut() {
@@ -109,7 +109,31 @@ function cambioemail() {
     console.log(email)
     };
 }
-/* enviar.addEventListener('click',function(){
-});
- */
+
+//validar fecha
+var fecha=document.getElementById("fecha").value
+var expresion5=/^\d{1,2}\-\d{1,2}\-\d{4}$/gm
+console.log(fecha.match(expresion5));
+function limpiarfecha() {
+    var fecha1 = document.getElementById("fecha");
+    fecha1.value="";
+};
+
+function cambiofecha() {
+    var fecha = document.getElementById("fecha").value;
+    if (fecha.match(expresion5)){
+        console.log(fecha)
+    }
+    else{
+    alert("Debe ingresar su fecha con el formato dd-mm-yyyy")
+    limpiarfecha()
+    console.log(fecha)
+    };
+}
+/*reservar.addEventListener('click',function(){
+    if  (!nombres.match(expresion2)) {
+        
+    }
+});*/
+
 
