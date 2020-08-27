@@ -64,7 +64,7 @@ function cambioedad() {
 
 //Validación E-mail
 var email=document.getElementById("email").value
-var expresion5=/[a-z 1-9]{1,100}\@[a-z]{1,10}\.[a-z]{2,3}$/gmi;
+var expresion5=/[a-z 1-9]{1,100}\@[a-z]{1,20}\.[a-z]{2,3}$/gmi;
 console.log(email.match(expresion5));
 
 function cambioemail() {
