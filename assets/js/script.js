@@ -146,27 +146,32 @@ reservar.addEventListener('click',function(){
     var hora=document.getElementById("hora").value;
     if  (!rut.match(expresion1)) {
         alert("Debe ingresar un rut de la forma xx.xxx.xxx-x")
-        limpiarrut()
+        document.getElementById("rut").focus()
     }
     else if  (!nombres.match(expresion2)) {
         alert("Debe ingresar sus dos nombres ej. Juan Andres")
         limpiarnombres()
+        document.getElementById("nombres").focus()
     }
     else if  (!apellidos.match(expresion3)) {
         alert("Debe ingresar sus dos apellidos")
         limpiarapellidos()
+        document.getElementById("apellidos").focus()
     }
     else if  (!edad.match(expresion4)) {
         alert("Debe ingresar su edad")
         limpiaredad()
+        document.getElementById("edad").focus()
     }
     else if  (!email.match(expresion5)) {
         alert("Debe ingresar su email con el formato xxxx@xx.xx")
         limpiaremail()
+        document.getElementById("email").focus()
     }
     else if  (!fecha.match(expresion6)) {
         alert("Debe ingresar su fecha con el formato dd-mm-yyyy")
         limpiarfecha()
+        document.getElementById("fecha").focus()
     }
         else{
             alert(`Estimado(a) ${nombres} ${apellidos}, su hora para ${y[x].text} ha sido reservada para el día ${fecha} a las ${hora}. Además, se le envió un mensaje a su correo ${email} con el detalle de su cita.
